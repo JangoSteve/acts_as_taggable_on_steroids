@@ -2,7 +2,9 @@ class Tag < ActiveRecord::Base
   has_many :taggings, :dependent => :destroy
   
   validates_presence_of :name
-  validates_uniqueness_of :name
+  validates_uniqueness_of :name, :scope => :attribute
+  validates_presence_of :name
+  validates_presence_of :attribute
   
   cattr_accessor :destroy_unused
   self.destroy_unused = false
