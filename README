@@ -1,3 +1,11 @@
+!!!
+
+This is a special fork for CrowdJuice
+
+script/plugin install git://github.com/JangoSteve/acts_as_taggable_on_steroids.git
+
+!!!
+
 = acts_as_taggable_on_steroids
 
 If you find this plugin useful, please consider a donation to show your support!
